@@ -9,7 +9,7 @@ Meeting Info Database is a class library project, which provides API for connect
 
 ## Getting started
 
-If you are not interested in building this project yourself, you can use prebuilt NuPackage in **packed** direcotry.
+If you are not interested in building this project yourself, you can use prebuilt NuPackage in **"packed"** directory.
 
 ### Prerequisites
 
@@ -24,12 +24,12 @@ For running the project you need to have the following items:
 
 ### Installing
 
-Install Visual Studio (include .NET Framework) and NuGet CLI with default options. While installing SQL Server create **sa** user with the following values:
+Install Visual Studio (include .NET Framework) and NuGet CLI with default options. While installing SQL Server create **"sa"** user with the following values:
 
 database username: **sa**<br>
 database password: **SQL**
 
-**Note:** It is discouraged to use **sa** account for application-database connection, so it is preferable to create the new user for this project. If you create different user, you need to **change connection strings** in the projects mentioned above and in *MeetingInfoDatabaseTest* project:
+**Note:** It is discouraged to use **"sa"** account for application-database connection, so it is preferable to create the new user for this project. If you create different user, you need to **change connection strings** in the projects mentioned above and in *MeetingInfoDatabaseTest* project:
 
  ```
  MeetingInfoDatabase > MeetingInfoDatabaseTest > TestConfiguration [class] > ConnectionString [field]
