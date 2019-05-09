@@ -4,8 +4,8 @@ Meeting Info Database is a class library project, which provides API for connect
 
 - [MeetingInfoWinForms](https://github.com/SanjinKurelic/MeetingInfoWinForms)
 - [MeetingInfoWPF](https://github.com/SanjinKurelic/MeetingInfoWPF)
-- MeetingInfoWebForms
-- MeetingInfoMVC
+- [MeetingInfoWebForms](https://github.com/SanjinKurelic/MeetingInfoWebForms)
+- [MeetingInfoMVC](https://github.com/SanjinKurelic/MeetingInfoMVC)
 
 ## Getting started
 
@@ -35,13 +35,15 @@ database password: **SQL**
  MeetingInfoDatabase > MeetingInfoDatabaseTest > TestConfiguration [class] > ConnectionString [field]
  ```
 
+**Run Database.sql script and create required database tables on SQL Server.**
+
 Clone this solution and open it with Visual Studio. This project uses several frameworks which are available trough NuGet package manager. Using a built-in NuGet download and install these packages:
 
 - Microsoft.ApplicationBlocks.Data version 2.0 or newer
 - EnterpriseLibrary.Common version 6.0 or newer
 - EnterpriseLibrary.Data 6.0 or newer
 
-Visual Stduio may install those packages upon opening the project, so check their existence before proceeding with instalation.
+Visual Studio may install those packages upon opening the project, so check their existence before proceeding with instalation.
 
 ### Running
 
@@ -49,13 +51,13 @@ This project is a class library project so you can't directly run it without one
 
 ### Building project
 
-Build project by running it as a release from Visual Studio, which will generate dll-s in bin/Release directory of the project. You could copy them to other project and use them accordingly, but with that approach you loose flexibility of upgrading the referenced NuGet packages. Better approach is to build those dll-s as NuGet package with the following command:
+Build project by running it as a release from Visual Studio, which will generate dll-s in bin/Release directory of the project. You could copy them to other project and use them accordingly, but with that approach you will loose flexibility of upgrading the referenced NuGet packages. Better approach is to build those dll-s as NuGet package with the following command:
 
 ```
 nuget.exe pack MeetingInfoDatabase.csproj -Prop Configuration=Release
 ```
 
-**Use generated MeetingInfoDatabase.1.0.0.nupkg file as a reference in other projects with the following command:**
+**Use generated MeetingInfoDatabase.1.0.0.nupkg file as a reference in <u>other projects</u> with the following command:**
 
 ```
 Install-Package MeetingInfoDatabase -Source <path_to_package>
@@ -81,4 +83,4 @@ The project uses several technologies for connecting to the database:
 
 ## Licence
 
-See the LICENSE file. For every question write to kurelic@sanjin.eu;
+See the LICENSE file. For every question write to kurelic@sanjin.eu
